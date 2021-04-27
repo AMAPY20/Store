@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر عربي</title>
+    <script type="text/html" src="{require('index.js')}"></script>
+</head>
+<body>
+        <div class="container-fluid">
+            <!--الشريط العلوي-->
+            <div class="row">
+                <nav class="navbar custom-navbar navbar-expand-lg">
+                    <div class="container">     
+                        <div class="navbar-header">
+                            <a href="." class="navbar-brand">
+                               <img src="./images/logo.png" alt="متجر التوفيق">
+                            </a>  
+                        </div>
+                        <form class="form-inline">
+                            <input type="search" class="form-control custom-form-control" placeholder="ابحث ..">
+                            <div class="dropdown categories">
+                                <a href="#" class="nav-link dropdown-toggle custom-btn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    اختر الفئة
+                                </a>
+                                <ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="search-category" value="men">
+                                                رجالي
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="search-category" value="women">
+                                                نسائي
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="search-category" value="kids">
+                                                اطفال
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="submit" class="btn search-btn">
+                                ابحث
+                            </button>
+                        </form>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">الصفحة الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">اقسام المتجر</a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">رجالي</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">نسائي</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">اطفال</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="search.html" class="nav-link">البحث المتقدم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">تواصل معنا</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html" id="btn-shopingcart" class="btn custom-btn btn-icon"
+                                title="عربة الشراء" data-toggle="tooltip" data-placement="bottom">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                   </div>
+                </nav>
+            </div>
+            <!--نهاية الشريط العلوي-->
+
+            <!--المنتجات المميزة-->
+            <div class="row">
+                <div class="col-12">
+                    <!--الصور المتبدلة-->
+                    <div id="carousel-featured" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 offset-2">
+                                            <img src="images/lacoste_1.png" alt="صورة لمنتج من لاكوست">
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="product-details">
+                                                <div class="product-category">تخفيضات</div>
+                                                <h1>تي شيرت رجالي من لاكوست </h1>
+                                                <a href="product.html">تسوق الان</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 offset-2">
+                                            <img src="images/lacoste_2.png" alt="صورة لمنتج نسائي">
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="product-details">
+                                                <div class="product-category">نسائي</div>
+                                                <h1>حقيبة شانتاكو نسائية</h1>
+                                                <a href="product.html">تسوق الان</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 offset-2">
+                                            <img src="images/lacoste_3.png" alt="صورة لمنتج من بولو">
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="product-details">
+                                                <div class="product-category">الاكثر مبيعا</div>
+                                                <h1>تي شيرت بولو</h1>
+                                                <a href="product.html">تسوق الان</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 offset-2">
+                                            <img src="images/adidas_3.png" alt="بدلة من فايربرد الرياضية">
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="product-details">
+                                                <div class="product-category">اطفال</div>
+                                                <h1>بدلة فايربرد الرياضية</h1>
+                                                <a href="product.html">تسوق الان</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--نهاية الصور المتبدلة-->
+                </div>
+            </div>
+            <!--نهاية المنتجات المميزة-->
+        </div>
+</body>
+</html>
