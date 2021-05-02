@@ -690,6 +690,34 @@ Product Page
 .more-description ul {
 	margin-bottom: 10px;
 }
+
+/*التعليقات على المنتج*/
+.comments .media {
+    margin: 15px;
+}
+
+.comments .media:first-child {
+	margin-top: 0px;
+}
+
+.comments .media img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+	border: 1px solid #dfdfdf;
+}
+
+.comments .media .media-heading {
+    font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.suggestions .custom-thumbnail {
+	margin-right: -8px;
+	margin-left: -8px;
+}
+
+
 /*************************************************************
 **************************************************************
 Media Query
@@ -792,6 +820,15 @@ Media Query
         font-size: 150%;
         margin-top: 10px;
     }
+
+    /* product-page */
+    .product-option{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        line-height: 40px;
+        font-size: 20px;
+    }
 }
 
 
@@ -855,5 +892,11 @@ Media Query
     #footer #brand-logos .img-container img{
         margin: 5px 15px;
     }
+
+    /*product page*/
+	#form-product-selection, .comments {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 }
