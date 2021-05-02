@@ -3,23 +3,23 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 module.exports = {
-  entry:  {
-    app:'./src/index.js'
+  entry: {
+    app: "./src/index.js",
   },
-  
+
   output: {
     path: path.join(__dirname, "/dist"),
     publicPath: "",
-    filename: "main.js"
+    filename: "main.js",
   },
 
-  mode:"development",
+  mode: "development",
 
   devServer: {
-      contentBase: path.join(__dirname, "/dist"),
-      port: 1239,
-      writeToDisk: true,
-      open: true,
+    contentBase: path.join(__dirname, "/dist"),
+    port: 1239,
+    writeToDisk: true,
+    open: true,
   },
 
   module: {
@@ -36,16 +36,16 @@ module.exports = {
         ],
       },
       {
-          test: /\.css$/,
-          use: [
-            {
-             loader: MiniCssExtractPlugin.loader,
-              options: {
-                publicPath: "../",
-              },
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "../",
             },
-              "css-loader",
-          ],
+          },
+          "css-loader",
+        ],
       },
 
       {
@@ -79,7 +79,7 @@ module.exports = {
         loader: "expose-loader",
         options: {
           exposes: ["$", "jQuery"],
-        }
+        },
       },
     ],
   },
@@ -89,7 +89,13 @@ module.exports = {
       filename: "index.html",
       template: "./src/index.html",
     }),
-    new MiniCssExtractPlugin({filename:"css/style.css"}),
+
+    new HtmlWebpackPlugin({
+      filename: "product.html",
+      template: "./src/product.html",
+    }),
+
+    new MiniCssExtractPlugin({ filename: "css/style.css" }),
     new OptimizeCSSAssetsPlugin({}),
   ],
 };
