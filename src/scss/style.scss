@@ -1,0 +1,68 @@
+@import './variables';
+@import './custom-tabel';
+@import './mixins';
+@import './slider';
+
+.custom-form-control, .custom-btn{
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 38px;
+    transition: all 0.3s ease;
+    padding: 6px 16px 7px 16px;
+    color: #868686;
+}
+
+.custom-btn:hover{
+    background-color: #d4d4d4;
+    border: 1px solid #8c8c8c;
+    color: $btn-primary-color-dark;
+}
+
+.custom-btn-primary{
+    @include buttom-style($brand-primary)
+}
+
+.custom-btn-primary2 {
+    color: #000;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus,
+    &:active:hover{
+        color:#000 ;
+        border-color: $btn-primary-color-dark;
+        background-color: $btn-primary-color-dark;
+    }
+}
+
+.custom-btn-danger{
+    @include buttom-style($brand-danger)
+}
+
+.sale {
+    background-color: $brand-sale-background;
+    color: $brand-sale;
+    font-weight: bold;
+    position: absolute;
+}
+
+.large {
+    height: 60px;
+    width: 60px;
+    padding: 35px;
+    font-size: 130%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-25deg);
+    flex-direction: column;
+    line-height: 90%;
+    left: -15px;
+    top: -15px;
+}

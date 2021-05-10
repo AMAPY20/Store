@@ -1,4 +1,6 @@
-import "@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css";
+// import "@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css";
+import "@laylazi/bootstrap-rtl-scss/scss/bootstrap-rtl.scss"
+import "./scss/style.scss";
 import "./css/style.css";
 import 'bootstrap';
 import "jquery/dist/jquery";

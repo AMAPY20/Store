@@ -1,10 +1,10 @@
 @font-face {
     font-family: "JF Flat Regular";
-    src: url(../fonts/JF-Flat-regular.eot), 
-         url(../fonts/JF-Flat-regular.eot?#iefix) format("embedded-opentype"), 
-      	 url("../fonts/JF-Flat-regular.svg# JF Flat Regular") format("svg"), 
-      	 url(../fonts/JF-Flat-regular.woff) format("woff"), 
-      	 url(../fonts/JF-Flat-regular.ttf) format("truetype");
+        src: url(../fonts/JF-Flat-regular.eot), 
+            url(../fonts/JF-Flat-regular.eot?#iefix) format("embedded-opentype"), 
+            url("../fonts/JF-Flat-regular.svg# JF Flat Regular") format("svg"), 
+            url(../fonts/JF-Flat-regular.woff) format("woff"), 
+            url(../fonts/JF-Flat-regular.ttf) format("truetype");
     font-weight: bold;
     font-style: normal;
 }
@@ -13,6 +13,7 @@ body {
     font-size: 14px;
     color: black;
     line-height: 1.429;
+    overflow-x: hidden;
 }
 .custom-navbar {
     border-bottom: 3px solid #eef0ea;
@@ -30,27 +31,14 @@ body {
 .custom-navbar .container{
     padding: 0;
 }
-.custom-form-control, .custom-btn{
-    border: 1px solid #ebebeb;
-    box-shadow: none;
-    border-radius: 2px;
-    font-size: 14px;
-    height: 38px;
-    transition: all 0.3s ease;
-    padding: 6px 16px 7px 16px;
-    color: #868686;
-}
+
 
 .custom-navbar .container .custom-form-control:focus{
     border-color: #C2101E;
     box-shadow: 0 0 2px 0 #C2101E;
 }
 
-.custom-btn:hover{
-    background-color: #d4d4d4;
-    border: 1px solid #8c8c8c;
-    color: #b86d07;
-}
+
 
 .categories .nav-link{
     border-right: 0;
@@ -83,16 +71,6 @@ body {
     border-radius: 0;
     font-size: 14px;
     font-weight: 700;
-}
-
-.custom-navbar .search-btn:hover,
-.custom-navbar .search-btn:active,
-.custom-navbar .search-btn:focus,
-.custom-navbar .search-btn:active:focus,
-.custom-navbar .search-btn:active:hover{
-    background-color: #C2101E;
-    border-color: #C2101E;
-    color: #ffffff
 }
 
 .custom-navbar .navbar-nav li a.nav-link{
@@ -143,6 +121,15 @@ body {
     margin-top: 8px;
 }
 
+.custom-navbar .search-btn:hover,
+.custom-navbar .search-btn:active,
+.custom-navbar .search-btn:focus,
+.custom-navbar .search-btn:active:focus,
+.custom-navbar .search-btn:active:hover{
+    background-color: #f3af41;
+    border-color: #f3af41;
+    color: #ffffff
+}
 /*المنتجات المميزة*/
 
 .carousel-row>.col-12{
@@ -185,29 +172,6 @@ body {
     margin-top: 15px;
     font-size: 18px;
     border-radius: 5px;
-}
-
-.sale {
-  background-color: #53ccd7;
-  color: white;
-  font-weight: bold;
-  position: absolute;
-}
-
-.sale.large {
-    height: 60px;
-    width: 60px;
-    padding: 35px;
-    font-size: 130%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-25deg);
-    flex-direction: column;
-    line-height: 90%;
-    left: -15px;
-    top: -15px;
 }
 
 #carousel-featured .product-details .sale.large span{
@@ -493,22 +457,6 @@ h3.custom-heading {
     color: #555555;
 }
 
-.custom-btn-primary2 {
-    color: #000;
-    background-color: #f8ad47;
-    border-color: #f8ad47;
-}
-
-.custom-btn-primary2:hover,
-.custom-btn-primary2:active,
-.custom-btn-primary2:focus,
-.custom-btn-primary2:active:focus,
-.custom-btn-primary2:active:hover{
-    color:#000 ;
-    border-color: #b86d07;
-    background-color: #b86d07;
-}
-
 #newsletter form input {
     background-color: #313131;
     opacity: .6;
@@ -725,14 +673,14 @@ CHECKOUT PAGE
 **************************************************************/
 h1.custom-heading {
 	font-size: 36px;
-	margin: 25px 0 0;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #EBEBEB;
+	margin: 25px 0;
+    /* padding-bottom: 20px;
+    border-bottom: 1px solid #EBEBEB; */
 }
 
-.custom-table {
+/* .custom-table {
     width: 100%;
-}
+} */
 
 .custom-table .custom-media img {
     width: 80px;
@@ -741,31 +689,29 @@ h1.custom-heading {
     margin-left: 10px;
 }
 
-.custom-table th{
+/* .custom-table th{
     padding: 15px;
     font-size: 120%;
     text-align: center;
-}
+} */
 
-.custom-table td{
+/* .custom-table td{
     padding: 15px;
     border-bottom: 1px solid #EBEBEB;
     border-top: 1px solid #EBEBEB;
     font-size: 120%;
     text-align: center;
-}
+} */
 
-.custom-table th:first-child, .custom-table td:first-child{
+/* .custom-table th:first-child, .custom-table td:first-child{
     width: 50%;
     text-align: right;
-}
+} */
 
-.custom-table th{
+/* .custom-table th{
     color: #c2c2c2;
     font-weight: normal;
-}
-
-
+} */
 
 .custom-table .custom-media h4 {
 	font-size: 18px;
@@ -792,21 +738,6 @@ h1.custom-heading {
 
 .custom-table .total-price .custom-text-muted .custom-text-muted{
     color: #A9A9A9;
-}
-
-.custom-btn-danger{
-    color: #ff5a5f;
-    border-color: #ff5a5f;
-    background-color: transparent;
-    border-radius: 3px;
-}
-
-.custom-btn-danger:hover,
-.custom-btn-danger:active,
-.custom-btn-danger:focus,
-.custom-btn-danger:active:focus,
-.custom-btn-danger:active:hover {
-    border-color: transparent;
 }
 
 /**************************************************************
@@ -864,24 +795,7 @@ SEARCH PAGE
     padding: 0 10px 0px 0;
 }
 
-.ui-slider{
-    margin: 25px 0 15px;
-    height: 2px !important;
-}
 
-.ui-slider .ui-slider-handle{
-    background-color: #f8ad47 !important;
-    border: none !important;
-    border-radius: 50%;
-    height: 12px !important;
-    width: 12px !important;
-    top: -6px !important;
-}
-
-.ui-slider .ui-slider-range {
-    border: 1px solid #f8ad47 !important;
-    top: -1px !important;
-}
 
 .custom-list-group {
 	border-bottom: 1px solid #EBEBEB;
@@ -1086,21 +1000,17 @@ Media Query
         font-size: 20px;
     }
 
-    /* search page */
-    .ui-slider .ui-slider-handle{
-        height: 20px !important;
-        width: 20px !important;
-        top: -10px !important;
+    #search-pagination {
+        display: flex;
+        justify-content: center;
     }
 
     /*contact page*/
 	#form-subscription {
 		margin-bottom: 40px;
 	}
+
 }
-
-
-
 
 
 @media (max-width: 767.5px){
@@ -1138,6 +1048,11 @@ Media Query
 
     #newsletter form .input-group{
         width: 100%;
+    }
+
+    #search-pagination {
+        display: flex;
+        justify-content: center;
     }
 
     /* chekout-page */
