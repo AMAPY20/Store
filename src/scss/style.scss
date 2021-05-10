@@ -2,7 +2,7 @@
 @import './custom-tabel';
 @import './mixins';
 @import './slider';
-
+@import './custom.scss';
 .custom-form-control, .custom-btn{
     border: 1px solid #ebebeb;
     box-shadow: none;
@@ -24,7 +24,7 @@
     @include buttom-style($brand-primary)
 }
 
-.custom-btn-primary2 {
+.btn-primary {
     color: #000;
     background-color: $brand-primary;
     border-color: $brand-primary;
